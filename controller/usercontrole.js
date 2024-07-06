@@ -1,4 +1,4 @@
- const Post= require('../models/blog'); 
+ const Post= require('../models/Post'); 
 
 exports.home =  (req, res) => {
     Post.find().sort({ createdAt: -1 }).then(posts => {
